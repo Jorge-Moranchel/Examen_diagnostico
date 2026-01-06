@@ -6,6 +6,17 @@ public class Main {
         int numeros;
         int suma = 0;
 
+        System.out.println("Ingresar varios numeros y dar el total");
+        System.out.println("-----------------------------------------------");
+        do {
+            System.out.println("Ingresa numeros :");
+            numeros = sc.nextInt();
+
+            if (numeros != 0){
+                suma += numeros;
+            }
+        }while  (numeros !=0);
+
         System.out.println("La suma total es : " + suma);
 
     }
